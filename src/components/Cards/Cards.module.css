@@ -1,0 +1,162 @@
+
+.maincontainer{
+    position: relative;
+    width: 282px;
+    padding: 0;
+    background: #020726;
+    margin: auto;
+  }
+  
+  .container1{
+    position: relative;
+    width: 100%;
+    height: 108px;
+    text-align: center;
+  
+    background: rgba(255,255,255,0.13);
+    border-radius: 17px;
+    z-index: 3;
+  }
+   .confirmed {
+    
+    padding: 10px 0 0 0;
+    font-family: Stardos Stencil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+  
+    /* identical to box height, or 67% */
+  
+    color: #fff;
+  }
+  
+  .noOfConfirmed {
+  
+    padding: 15px 0 0 0;
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+ 
+  /* identical to box height, or 0% */
+  
+  color: #F82013;
+  
+  }
+  
+  .increaseInConfirmed {
+    padding: 15px 0 0 0;
+  
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+ 
+  /* or 86% */
+  
+  
+  color: #F82013;
+  
+  }
+  
+  .container2{
+    position: relative;
+    width: 100%;
+    height: 108px;
+    margin-top: 30px;
+  
+    background: rgba(255,255,255,0.13);
+    border-radius: 17px;
+    z-index: 3;
+  }
+  
+  .recovered{
+   padding: 10px 0 0 0;
+    font-family: Stardos Stencil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+   
+    /* identical to box height, or 67% */
+  
+    text-align: center;
+  
+    color: green;
+  }
+  
+  .noOfRecovered {
+    padding: 15px 0 0 0;
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+ 
+  /* identical to box height, or 0% */
+  
+  color: #F82013;
+  
+  }
+  
+  .increaseRecovered{
+    padding: 15px 0 0 0;
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+ 
+  /* or 86% */
+  
+  
+  color: #F82013;
+  
+  }
+  
+  .container3{
+    position: relative;
+    width: 100%;
+    height: 108px;
+    margin-top: 30px;
+  
+    background: rgba(255,255,255,0.13);
+    border-radius: 17px;
+    z-index: 3;
+  }
+  
+  .deaths{
+     padding: 10px 0 0 0;
+    font-family: Stardos Stencil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    /* identical to box height, or 67% */
+  
+    text-align: center;
+  
+    color: red;
+  }
+  
+  .noOfDeaths{
+    padding: 15px 0 0 0;
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /* identical to box height, or 0% */
+    
+  color: #F82013;
+  
+  }
+  
+  .increaseDeaths{
+    padding: 15px 0 0 0;
+  font-family: Stardos Stencil;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  /* or 86% */
+  
+  
+  color: #F82013;
+  
+  }
+  
