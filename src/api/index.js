@@ -27,3 +27,16 @@ export const fetchData = async () => {
     }
     
 }
+
+export const fetchDailyData = async () => {
+    try{
+        const { data} = await axios.get(url);
+
+        return data.cases_time_series;
+
+      
+
+    } catch(error){
+        return error;
+    }
+}

@@ -4,7 +4,6 @@ import { Card, CardContent, Typography, Grid} from '@material-ui/core';
 import styles from './Cards.module.css';
 
 const Cards = (props) => {
-    console.log(props.data);
     
     return (
         <div className={styles.maincontainer}>
