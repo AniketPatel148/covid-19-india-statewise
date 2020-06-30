@@ -6,7 +6,7 @@ import styles from './Charts.module.css';
 
 
 
-const Charts = () => {
+const Charts = ( data) => {
 
     const [dailyData, setDailyData] = useState([]);
     
@@ -16,7 +16,29 @@ const Charts = () => {
         }
     
         fetchAPI();
-    })
+    },[])
+
+  const Data = data.data
+    const barChart = (
+      Data.confirmed ? (
+        <Bar
+          data={{
+            labels: ['Infected', 'Recovered', 'Deaths'],
+            datasets: [
+              {
+                label: 'People',
+                backgroundColor: ['rgba(0, 0, 255, 0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
+                data: [Data.confirmed, Data.recovered, Data.deaths],
+              },
+            ],
+          }}
+          options={{
+            legend: { display: false },
+            title: { display: true, text: `Current state in ${data.state}` },
+          }}
+        />
+      ) : null
+    );
 
     const lineChart = (
         dailyData.length ? (
@@ -46,13 +68,25 @@ const Charts = () => {
           />
         ) : null
       );
-
-
-    return (
+ console.log(data.state);
+ 
+    
+    if(data.state === "Total"){
+       const chart = lineChart
+       return (
         <div className={styles.container}>
-           {lineChart}
+              {chart}
         </div>
     )
+    }else{
+      const chart = barChart
+      return (
+        <div className={styles.container}>
+              {chart}
+        </div>
+    )
+    }
+   
 }
 
 export default Charts;

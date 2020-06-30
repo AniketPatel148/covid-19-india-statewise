@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+
+.main {
+    background-color: #fff;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 95%;
+    margin: 1% auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.img {
+    width: 40px;
+    height: 38px;
+    padding: 0 3%;
+}
+
+.title{
+    font-family: Stardos Stencil;
+    font-style: normal;
+    font-weight: bold;
+    font-size: x-large;
+    margin: auto 3% auto 1.5%;
+}
+
+.span{
+    color: #149F84;
+}
+
+.favicon1 {
+    margin: auto 1.5% auto auto;
+}
+ .favicon2{
+    margin: auto 1.5% auto 0.5%;
+ }
