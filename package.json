@@ -2,6 +2,9 @@
   "name": "corona-tracker",
   "version": "0.1.0",
   "private": true,
+  "engines" : {
+    "node": "12.14.1"
+  },
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@testing-library/jest-dom": "^4.2.4",
