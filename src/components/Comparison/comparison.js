@@ -1,10 +1,23 @@
 import React from 'react'
+import style from './comparison.module.css'
 
-const Comparison = (props) => {
+const Comparison = ({order}) => {
     return (
-        <div>
-           Hii
-           {console.log(props.order) }
+        <div className={style.container}>
+            <table >
+             <tbody>
+                {order.map( (s,index) => {
+                    return (
+                        <tr>
+                            <td>{s.state}</td>
+                            <td>{s.confirmed}</td>
+                            <td>{s.recovered}</td>
+                            <td>{s.deaths}</td>
+                        </tr>
+                    )
+                })}
+                </tbody>
+            </table>
         </div>
     )
     

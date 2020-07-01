@@ -13,7 +13,8 @@ class App extends React.Component{
     ButtonName: "Charts",
     showComparison: false,
     ButtonName2: "Compare",
-    Order:[]
+    Order:[],
+    showCard: true
   }
 
   async componentDidMount () {
@@ -37,7 +38,9 @@ class App extends React.Component{
     let ButtonName=this.state.ButtonName
     ClickHandler ? (ButtonName = 'Charts'):(ButtonName = 'Cards')
     this.setState({showChart: !ClickHandler,
-    ButtonName: ButtonName})
+    ButtonName: ButtonName,
+    showCard: ClickHandler,
+    showComparison:false})
 
     }
 
@@ -47,7 +50,9 @@ class App extends React.Component{
     let ButtonName2=this.state.ButtonName2
     ClickHandler ? (ButtonName2 = 'Compare'):(ButtonName2 = 'Cards')
     this.setState({showComparison: !ClickHandler,
-    ButtonName2: ButtonName2})
+    ButtonName2: ButtonName2,
+    showCard: ClickHandler,
+    showChart:false})
 
     this.handleCompare()
     
@@ -74,9 +79,17 @@ class App extends React.Component{
       
        {this.state.showChart?
         <Charts data={data} state={state}/> 
-        : <Cards data={data}/>}
+        : null}
 
-        <Comparisons order={Order}/>
+        {this.state.showComparison?
+          <Comparisons order={Order}/>
+        : null}
+ 
+        {this.state.showCard?
+          <Cards data={data}/>
+           : null}
+
+        
 
       
       </div>

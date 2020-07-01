@@ -1,0 +1,20 @@
+
+
+.container table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.container tr {
+    background: #FFFFFF;
+    backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+    border-spacing: 2px;
+    border-bottom: 15px solid;
+   }
+
+.container td{
+    padding: 3%;
+}
+
