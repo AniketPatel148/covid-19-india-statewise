@@ -61,3 +61,21 @@ export const States = async () => {
     }
 
 }
+
+export const Order = async () => {
+    try{
+        const { data: { statewise }} = await axios.get(url)
+        statewise.shift()
+
+        
+        const sortedArray =  statewise.sort(function(a, b) {
+            return parseFloat(b.confirmed) - parseFloat(a.confirmed);
+        });
+      
+        return sortedArray
+
+    }catch(error){
+        console.log(error);
+        
+    }
+}

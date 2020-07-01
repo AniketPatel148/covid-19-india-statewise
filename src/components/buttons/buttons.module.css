@@ -1,26 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
 
-
-.main {
-    
-    background: #020726;
-    padding-top: 1%;
-}
-
-.center{
-    text-align: center;
-
-}
-
-.backgroundImage{
-    position: absolute;
-    height: 130%;
-    width: 100%;
-    left: 0;
-    opacity: 0.5;
-    z-index: 1;
-}
-
 .container{
     width: 100%;
     display: grid;
@@ -47,5 +26,5 @@
  }
 
  .container button:hover {
-     background-color: black;
+     background-color: red;
  }

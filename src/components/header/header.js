@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './header.module.css'
-import mask from './mask.png'
+import mask from '../image/mask.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
