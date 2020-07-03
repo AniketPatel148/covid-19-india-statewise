@@ -1,5 +1,20 @@
+.container{
+    margin: 5% auto 0;
+    display:flex;
+}
+
+.container span{
+   margin: auto;
+   margin-right: 0;
+   font-family: 'Stardos Stencil',  sans-serif;
+   font-size: 1.3rem;
+   color: aliceblue;
+}
+
+
 .main{
-    margin: 2% auto 0;
+    margin: auto;
+    margin-left: 5%;
     width: 50% !important;
     background-color: green;
     padding: 0;

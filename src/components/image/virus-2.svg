@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 2960" style="enable-background:new 0 0 1440 2960;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#001536;}
+	.st1{opacity:0.4;fill:url(#SVGID_1_);}
+</style>
+<rect class="st0" width="1440" height="2960"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="121.9476" y1="1135.5" x2="1420.0963" y2="1135.5">
+	<stop  offset="0" style="stop-color:#0079FF;stop-opacity:0"/>
+	<stop  offset="0.4387" style="stop-color:#007BFF;stop-opacity:0.4387"/>
+	<stop  offset="0.6431" style="stop-color:#0083FF;stop-opacity:0.6431"/>
+	<stop  offset="0.799" style="stop-color:#008FFF;stop-opacity:0.799"/>
+	<stop  offset="0.9295" style="stop-color:#00A2FF;stop-opacity:0.9295"/>
+	<stop  offset="1" style="stop-color:#00AFFF"/>
+</linearGradient>
+<polygon class="st1" points="1127.11,464.59 959.49,715.12 1029.78,1016.6 1008.16,1127.01 1051.41,1356.3 1341,1640.6 629.68,1989 
+	148.48,1606.83 602.7,1011.6 89,579.24 348.52,282 "/>
+</svg>

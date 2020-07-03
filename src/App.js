@@ -40,7 +40,8 @@ class App extends React.Component{
     this.setState({showChart: !ClickHandler,
     ButtonName: ButtonName,
     showCard: ClickHandler,
-    showComparison:false})
+    showComparison:false,
+    ButtonName2:'Compare'})
 
     }
 
@@ -52,7 +53,8 @@ class App extends React.Component{
     this.setState({showComparison: !ClickHandler,
     ButtonName2: ButtonName2,
     showCard: ClickHandler,
-    showChart:false})
+    showChart:false,
+    ButtonName:'Charts'})
 
     this.handleCompare()
     

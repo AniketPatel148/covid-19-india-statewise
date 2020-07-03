@@ -2,8 +2,6 @@
 
 
 .main {
-    
-    background: #020726;
     padding-top: 1%;
 }
 
@@ -49,3 +47,5 @@
  .container button:hover {
      background-color: black;
  }
+
+ 

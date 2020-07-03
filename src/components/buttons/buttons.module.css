@@ -15,16 +15,23 @@
 
 
 .container button {
-    background-color: blanchedalmond;
     width: 114px;
-    border: none;
     border-radius: 10px;
     background-color: rgba(46, 211, 198, 0.94);
     padding: 0.35rem 0;
     font-family: 'Stardos Stencil';
     font-weight: bold;
- }
+    text-align: center;
+   }
 
  .container button:hover {
      background-color: red;
+     border: solid #337FED 1px;
+     background: #1E62D0;
+     background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     border-radius: 10px;
+     text-decoration: none 
  }
+

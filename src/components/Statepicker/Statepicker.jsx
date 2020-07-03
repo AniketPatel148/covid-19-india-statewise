@@ -19,11 +19,15 @@ const Statepicker = ({handleStateChange}) => {
     },[setfetchedStates]);
  
     return (
-        <div className={styles.main}><FormControl>
+        <div className={styles.container}>
+        <span>State :</span>
+        <div className={styles.main}>
+        <FormControl>
             <NativeSelect defaultValue="" onChange={(e) => handleStateChange(e.target.value)}>
                 {fetchedStates.map((state,i) => <option key={i}  value={state}>{state}</option>)}
             </NativeSelect>
         </FormControl>
+        </div>
         </div>
     )
 }
