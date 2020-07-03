@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,600&display=swap');
 
 
 .maincontainer{
@@ -16,6 +17,7 @@
     height: 108px;
     text-align: center;
     margin-top: 30px;
+    padding-bottom: 20px;
   
   
     background: rgba(255,255,255,0.13);
@@ -51,6 +53,8 @@
   
   .increaseInConfirmed {
     padding: 15px 0 0 0;
+    width: 50%;
+    margin: auto;
   
   font-family: Stardos Stencil;
   font-style: normal;
@@ -69,6 +73,7 @@
     width: 100%;
     height: 108px;
     margin-top: 30px;
+    padding-bottom: 20px;
   
     background: rgba(255,255,255,0.13);
     border-radius: 17px;
@@ -86,7 +91,7 @@
   
     text-align: center;
   
-    color: green;
+    color: #fff;
   }
   
   .noOfRecovered {
@@ -98,7 +103,7 @@
  
   /* identical to box height, or 0% */
   
-  color: #F82013;
+  color: #72FC45;
   
   }
   
@@ -108,11 +113,14 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  width: 50%;
+  margin: auto;
+
  
   /* or 86% */
   
   
-  color: #F82013;
+  color: #72FC45;
   
   }
   
@@ -121,6 +129,7 @@
     width: 100%;
     height: 108px;
     margin-top: 30px;
+    padding-bottom: 20px;
   
     background: rgba(255,255,255,0.13);
     border-radius: 17px;
@@ -137,7 +146,7 @@
   
     text-align: center;
   
-    color: red;
+    color: #fff;
   }
   
   .noOfDeaths{
@@ -148,7 +157,7 @@
   font-size: 18px;
   /* identical to box height, or 0% */
     
-  color: #F82013;
+  color: #fff;
   
   }
   
@@ -158,10 +167,28 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  width: 50%;
+  margin: auto;
+
   /* or 86% */
   
   
-  color: #F82013;
+  color:#fff;
   
+  }
+
+  .lastUpdateTime{
+    margin-top: 5%;
+    font-family: 'Muli',sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+/* or 86% */
+
+text-align: left;
+
+
+color: #9E9898;
   }
   

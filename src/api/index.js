@@ -20,9 +20,9 @@ export const fetchData = async (state) => {
                 active:data.statewise[id].active,
                 recovered:data.statewise[id].recovered,
                 lastUpdate:data.statewise[id].lastupdatedtime,
-                dailyconfirmed:data.cases_time_series[data.cases_time_series.length - 1].dailyconfirmed,
-                dailyrecovered:data.cases_time_series[data.cases_time_series.length - 1].dailyrecovered,
-                dailydeceased:data.cases_time_series[data.cases_time_series.length - 1].dailydeceased,
+                dailyconfirmed:data.statewise[id].deltaconfirmed,
+                dailyrecovered:data.statewise[id].deltarecovered,
+                dailydeceased:data.statewise[id].deltadeaths,
                  }
           
                  return modifiedData;
