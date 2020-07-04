@@ -23,7 +23,7 @@ const Statepicker = ({handleStateChange}) => {
         <span>State :</span>
         <div className={styles.main}>
         <FormControl>
-            <NativeSelect defaultValue="" onChange={(e) => handleStateChange(e.target.value)}>
+            <NativeSelect defaultValue="India" onChange={(e) => handleStateChange(e.target.value)}>
                 {fetchedStates.map((state,i) => <option key={i}  value={state}>{state}</option>)}
             </NativeSelect>
         </FormControl>

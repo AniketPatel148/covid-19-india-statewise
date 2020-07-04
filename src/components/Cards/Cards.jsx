@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './Cards.module.css';
 
 const Cards = (props) => {
+
+
     const confirmed = (props.data.confirmed)
     const dailyconfirmed = (props.data.dailyconfirmed)
     const recovered = (props.data.recovered)

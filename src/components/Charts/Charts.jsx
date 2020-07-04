@@ -7,7 +7,7 @@ import styles from './Charts.module.css';
 
 
 const Charts = ( data) => {
-
+  
     const [dailyData, setDailyData] = useState([]);
     
     useEffect (() => {
@@ -35,6 +35,22 @@ const Charts = ( data) => {
           options={{
             legend: { display: false },
             title: { display: true, text: `Current state in ${data.state}` },
+           scales: {
+            xAxes: [{
+                   ticks: {
+                    fontSize: 18
+                   }
+                  }],
+            yAxes: [{
+                   ticks: {
+                    fontSize: 18
+                   }
+                  }]
+           
+              },
+               fill: true, 
+                
+             
           }}
         />
       ) : null
@@ -50,6 +66,7 @@ const Charts = ( data) => {
                 label: 'Infected',
                 borderColor: '#3333ff',
                 fill: true,
+                fontSize: 18,
               }, {
                 data: dailyData.map((data) => data.dailydeceased),
                 label: 'Deaths',

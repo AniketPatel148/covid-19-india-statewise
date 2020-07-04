@@ -1,13 +1,14 @@
 import React from 'react';
 import { Cards, Charts, Statepicker, Button, Header, Comparisons, Footer} from './components';
 import styles from  './App.module.css';
-import { fetchData,Order } from './api';
+import { fetchData,Order,fetchDataWithComma } from './api';
 import './components/font-awesome/index';
 
 class App extends React.Component{
 
   state = {
-    data: {},
+    dataForCharts: {},
+    dataForCards:{},
     state: '',
     showChart: false,
     ButtonName: "Charts",
@@ -18,13 +19,16 @@ class App extends React.Component{
   }
 
   async componentDidMount () {
-    const data = await fetchData("Total");
-    this.setState ({data: data})
-  }
+    const dataForCards = await fetchDataWithComma('Total');
+    const dataForCharts = await fetchData('Total');
+    this.setState({ dataForCards: dataForCards,dataForCharts:dataForCharts, state: 'India' });
+
+    }
 
   handleStateChange = async (state) => {
-    const data = await fetchData(state);
-    this.setState({ data, state: state });
+    const dataForCards = await fetchDataWithComma(state);
+    const dataForCharts = await fetchData(state);
+    this.setState({ dataForCards: dataForCards,dataForCharts:dataForCharts, state: state });
   }
 
   handleCompare = async () => {
@@ -36,7 +40,7 @@ class App extends React.Component{
 
     const ClickHandler= this.state.showChart
     let ButtonName=this.state.ButtonName
-    ClickHandler ? (ButtonName = 'Charts'):(ButtonName = 'Cards')
+    ClickHandler ? (ButtonName = 'Charts'):(ButtonName = 'Home')
     this.setState({showChart: !ClickHandler,
     ButtonName: ButtonName,
     showCard: ClickHandler,
@@ -49,7 +53,7 @@ class App extends React.Component{
 
     const ClickHandler= this.state.showComparison
     let ButtonName2=this.state.ButtonName2
-    ClickHandler ? (ButtonName2 = 'Compare'):(ButtonName2 = 'Cards')
+    ClickHandler ? (ButtonName2 = 'Compare'):(ButtonName2 = 'Home')
     this.setState({showComparison: !ClickHandler,
     ButtonName2: ButtonName2,
     showCard: ClickHandler,
@@ -64,7 +68,7 @@ class App extends React.Component{
 
 
   render(){
-    const { data, state, Order } = this.state; 
+    const { dataForCards,dataForCharts, state, Order } = this.state; 
     
 
     return (
@@ -80,7 +84,7 @@ class App extends React.Component{
         name2={this.state.ButtonName2}/>
       
        {this.state.showChart?
-        <Charts data={data} state={state}/> 
+        <Charts data={dataForCharts} state={state}/> 
         : null}
 
         {this.state.showComparison?
@@ -88,7 +92,7 @@ class App extends React.Component{
         : null}
  
         {this.state.showCard?
-          <Cards data={data}/>
+          <Cards data={dataForCards}/>
            : null}
     </div>
     <div className={styles.footer}>

@@ -9,7 +9,6 @@ const Footer = () => {
         <div className={style.container}>
         <div>Stay Home.</div>
         <div>Stay Safe.</div>
-        <div>From Aniket with <span role="img" aria-label="heart">💖</span></div>
         <div>Copyright © {year}</div>
         
         </div>
