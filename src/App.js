@@ -91,8 +91,10 @@ class App extends React.Component{
           <Cards data={data}/>
            : null}
     </div>
-     
-     <Footer/>
+    <div className={styles.footer}>
+    <Footer/>
+    </div>
+      
       </div>
     )
   }
