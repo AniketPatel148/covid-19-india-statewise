@@ -9,7 +9,6 @@ const Header = () => {
         <img src={mask}  alt="mask" className={style.img}/>
         <div className={style.title}> Covid-19 <span className={style.span}>Tracker</span></div> 
         <div className={style.favicon1}><FontAwesomeIcon icon="bars" /></div>
-        <div className={style.favicon2}><FontAwesomeIcon icon="share" /></div>
         </div>
     )
 

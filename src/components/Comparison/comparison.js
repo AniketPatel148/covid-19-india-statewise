@@ -6,9 +6,19 @@ const Comparison = ({order}) => {
         <div className={style.container}>
             <table >
              <tbody>
+                <tr>
+                    <th>Rank</th>
+                    <th>State</th>
+                    <th>Confirmed</th>
+                    <th>Recovered</th>
+                    <th>Deaths</th>
+                </tr>
+               
                 {order.map( (s,index) => {
+                   
                     return (
-                        <tr>
+                        <tr key={index}>
+                            <td>{index + 1}</td>
                             <td>{s.state}</td>
                             <td>{s.confirmed}</td>
                             <td>{s.recovered}</td>

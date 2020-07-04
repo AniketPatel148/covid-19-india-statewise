@@ -4,7 +4,7 @@ body {
     background-image: url('./components/image/background.jpg'), url('./components/image/virus.svg'), url('./components/image/virus.svg');
     background-repeat: no-repeat;
     background-size: 100%,20%,15%;
-    background-position: 0% 160%, 0% 30%, right 50%;
+    background-position: 0% 80%, 0% 30%, right 5%;
    }
 
 

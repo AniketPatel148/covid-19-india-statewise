@@ -1,20 +1,29 @@
 
 
 .container table{
-    width: 50%;
+    width: 80%;
     border-collapse: collapse;
     margin: auto;
 }
 
 .container tr {
-    background: #FFFFFF;
+    color: darkcyan;
     backdrop-filter: blur(4px);
 /* Note: backdrop-filter has minimal browser support */
     border-spacing: 2px;
-    border-bottom: 15px solid;
+    border-bottom: 15px solid #001536;
    }
 
 .container td{
     padding: 3%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container th{
+    color: #2ED3C6;
+    background-color: #001536;
+    border-bottom: 15px solid #2ED3C6; 
+    border-spacing:0 15px; 
 }
 

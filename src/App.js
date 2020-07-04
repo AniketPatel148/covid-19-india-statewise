@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cards, Charts, Statepicker, Button, Header, Comparisons} from './components';
+import { Cards, Charts, Statepicker, Button, Header, Comparisons, Footer} from './components';
 import styles from  './App.module.css';
 import { fetchData,Order } from './api';
 import './components/font-awesome/index';
@@ -90,11 +90,9 @@ class App extends React.Component{
         {this.state.showCard?
           <Cards data={data}/>
            : null}
-
-        
-
-      
-      </div>
+    </div>
+     
+     <Footer/>
       </div>
     )
   }

@@ -8,4 +8,7 @@ export {default as Button} from './buttons/buttons';
 
 export {default as Header} from './header/header';
 
-export {default as Comparisons} from './Comparison/comparison'
+export {default as Comparisons} from './Comparison/comparison';
+
+
+export {default as Footer} from './footer/footer';
