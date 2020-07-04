@@ -85,10 +85,8 @@ const Charts = ( data) => {
           />
         ) : null
       );
- console.log(data.state);
- 
     
-    if(data.state === "Total"){
+    if(data.state === "Total" || data.state === "India"){
        const chart = lineChart
        return (
         <div className={styles.container}>
