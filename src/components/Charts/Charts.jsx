@@ -65,6 +65,7 @@ const Charts = ( data) => {
                 data: dailyData.map((data) => data.dailyconfirmed),
                 label: 'Infected',
                 borderColor: '#3333ff',
+                backgroundColor: 'rgba(0,0,255,0.5)',
                 fill: true,
                 fontSize: 18,
               }, {
@@ -76,7 +77,7 @@ const Charts = ( data) => {
               },{
                 data: dailyData.map((data) => data.dailyrecovered),
                 label: 'Recovered',
-                borderColor: 'red',
+                borderColor: 'green',
                 backgroundColor: 'rgba(0, 255, 0, 0.5)',
                 fill: true,
               }
