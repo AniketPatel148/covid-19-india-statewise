@@ -75,7 +75,7 @@ const Charts = ( data) => {
                 fill: true,
               },{
                 data: dailyData.map((data) => data.dailyrecovered),
-                label: 'Deaths',
+                label: 'Recovered',
                 borderColor: 'red',
                 backgroundColor: 'rgba(0, 255, 0, 0.5)',
                 fill: true,
