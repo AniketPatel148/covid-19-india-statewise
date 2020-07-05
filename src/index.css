@@ -7,5 +7,9 @@ body {
     background-position: 0% 80%, 0% 30%, right 5%;
    }
 
+  html{
+      overflow-x: hidden;
+  } 
+
 
 

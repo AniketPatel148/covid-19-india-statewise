@@ -5,3 +5,11 @@
     background-color: #111E6C;
     color: aliceblue;
 }
+
+.fontawesome {
+ display: flex;
+ justify-content: space-between;
+ width: 50%;
+ margin: 3% auto;
+ margin-left: 0;
+}
