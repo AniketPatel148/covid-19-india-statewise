@@ -1,15 +1,23 @@
 body {
     margin: 0;
     background: #001536;
-    background-image: url('./components/image/background.jpg'), url('./components/image/virus.svg'), url('./components/image/virus.svg');
-    background-repeat: no-repeat;
-    background-size: 100%,20%,15%;
-    background-position: 0% 80%, 0% 30%, right 5%;
    }
 
   html{
       overflow-x: hidden;
   } 
 
+@media screen and (max-width: 900px) {
 
+    body {
+        margin: 0;
+        background: #001536;
+        background-image: url('./components/image/background.jpg'), url('./components/image/virus.svg'), url('./components/image/virus.svg');
+        background-repeat: no-repeat;
+        background-size: 100%,20%,15%;
+        background-position: 0% 80%, 0% 30%, right 5%;
+       }
+    
+
+}
 

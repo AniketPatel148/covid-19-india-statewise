@@ -13,3 +13,22 @@
  margin: 3% auto;
  margin-left: 0;
 }
+
+@media (min-width:400px) {
+    .container{
+        width: 100%;
+        padding: 3% 5%;
+        text-align: left;
+        background-color: #111E6C;
+        color: aliceblue;
+    }
+    
+    .fontawesome {
+     display: flex;
+     justify-content: space-between;
+     width: 10%;
+     margin: 1% auto;
+     margin-left: 0;
+    }
+     
+}
