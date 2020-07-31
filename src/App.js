@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./App.module.css";
 import { fetchData, Order, fetchDataWithComma } from "./api";
 import "./components/font-awesome/index";
+import AddToHomescreen from "./AddToHomescreen";
 
 import loadable from "@loadable/component";
 const Cards = loadable(() => import("./components/Cards/Cards"));
@@ -87,6 +88,7 @@ class App extends React.Component {
 
 		return (
 			<div className={styles.main}>
+				<AddToHomescreen />
 				<Header />
 				<div className={styles.center}>
 					<Statepicker handleStateChange={this.handleStateChange} />

@@ -26,7 +26,8 @@
 		"react-chartjs-2": "^2.9.0",
 		"react-countup": "^4.3.3",
 		"react-dom": "^16.13.1",
-		"react-scripts": "3.4.1"
+		"react-scripts": "3.4.1",
+		"typescript": "^3.9.7"
 	},
 	"scripts": {
 		"start": "node server.js",
